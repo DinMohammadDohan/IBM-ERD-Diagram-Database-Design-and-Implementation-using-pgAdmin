@@ -116,39 +116,47 @@ WHERE "position" NOT IN ('CEO', 'CFO');
 2. View all the rows returned from the view.
 3. Save the results of the query to a file named staff_locations_view.csv on your local computer storage.
 4. Take a screenshot of the view shown in the tree-view pane on the left-hand side of the page alongside the results in the Data Output pane, and save it as Task7.png or Task7.jpg.
-![Task 6A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%206A.png)
-![Task 6B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%206B.png)
+   
+![Task 7A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%207A.png)
+![Task 7B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%207B.png)
 
 ### Task 8: Create a materialized view and export the data
 A marketing consultant requires access to your product data in their MySQL database for a marketing campaign. You will create a materialized view in your PostgreSQL database that returns this information and export the results to a CSV file.
 
-In your COFFEE database, create a new materialized view named product_info_m-view using the following SQL:
+1. In your COFFEE database, create a new materialized view named product_info_m-view using the following SQL:
 SELECT product.product_name, product.description, product_type.product_category
 FROM product
 JOIN product_type
 ON product.product_type_id = product_type.product_type_id;
-Refresh the materialized view with data.
-View all the rows returned from the view.
-Save the results of the query to a file named product_info_m-view.csv on your local computer storage.
-Take a screenshot of the view shown in the tree-view pane on the left-hand side of the page alongside the results in the Data Output pane, and save it as Task8.png or Task8.jpg.
-Task 9: Import data into a Db2 database
+2. Refresh the materialized view with data.
+3. View all the rows returned from the view.
+4. Save the results of the query to a file named product_info_m-view.csv on your local computer storage.
+5. Take a screenshot of the view shown in the tree-view pane on the left-hand side of the page alongside the results in the Data Output pane, and save it as Task8.png or Task8.jpg.
+![Task 8A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%208A.png)
+![Task 8B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%208B.png)
+
+
+### Task 9: Import data into a Db2 database
 The external payroll company have asked you to upload the staff location information to their Db2 database.
 
-In a new browser tab, go to https://cloud.ibm.com/login, log in using your credentials, and then open a console for your Db2 on Cloud instance that you created earlier in this course.
-Use the Load Data feature to load a new table named STAFF_LOCATIONS with the staff location information saved in the staff_locations_view.csv file that you exported from the view you created in Task 7.
-Explore the new table and then view the data in it.
-Take a screenshot of the contents of the new table and save it as Task9.png or Task9.jpg.
-Task 10: Import data into a MySQL database
+1. In a new browser tab, go to https://cloud.ibm.com/login, log in using your credentials, and then open a console for your Db2 on Cloud instance that you created earlier in this course.
+2. Use the Load Data feature to load a new table named STAFF_LOCATIONS with the staff location information saved in the staff_locations_view.csv file that you exported from the view you created in Task 7.
+3. Explore the new table and then view the data in it.
+4. Take a screenshot of the contents of the new table and save it as Task9.png or Task9.jpg.
+![Task 9A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%209A.png)
+![Task 9B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%209B.png)
+
+
+### Task 10: Import data into a MySQL database
 The marketing consultant has asked you to upload the product information to their MySQL database.
 
-In the terminal from the side-by-side Cloud IDE, use the start_mysql command to start a My SQL service session in the Cloud IDE.
-Use the browser weblink to open phpMyAdmin in a new tab in your browser.
-In phpMyAdmin, create a new database named coffee_shop_products, and then import the product information saved in the product_info_m-view.csv file from your materialized view into a new table in the coffee_shop_products database.
-Browse the contents of the new table.
-Take a screenshot of the contents of the new table and save it as Task10.png or Task10.jpg.
+1. In the terminal from the side-by-side Cloud IDE, use the start_mysql command to start a My SQL service session in the Cloud IDE.
+2. Use the browser weblink to open phpMyAdmin in a new tab in your browser.
+3. In phpMyAdmin, create a new database named coffee_shop_products, and then import the product information saved in the product_info_m-view.csv file from your materialized view into a new table in the coffee_shop_products database.
+4. Browse the contents of the new table.
+5. Take a screenshot of the contents of the new table and save it as Task10.png or Task10.jpg.
 
-
-
+![Task 10](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%2010.png)
 
 
 
