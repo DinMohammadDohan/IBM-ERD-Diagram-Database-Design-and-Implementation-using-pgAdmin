@@ -25,8 +25,8 @@ After completing this lab, you will be able to:
 
 1.1 The following image shows sample data from each of the data sources that you will be working with to design your new central database.
 1.2 Make a list of the entities you have identified.
-Task 1.png
-
+[Task 1.png
+](https://github.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/blob/main/Task%201.png?raw=true)
 Task 2: Identify attributes
 In this task, you will identify the attributes for one of the entities that you plan to create.
 
