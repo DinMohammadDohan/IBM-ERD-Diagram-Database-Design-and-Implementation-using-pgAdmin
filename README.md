@@ -26,14 +26,17 @@ After completing this lab, you will be able to:
 1.1 The following image shows sample data from each of the data sources that you will be working with to design your new central database.
 1.2 Make a list of the entities you have identified.
 
-![ERD Diagram](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%201.png)
+![Task 1](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%201.png)
 
-Task 2: Identify attributes
+### Task 2: Identify attributes
 In this task, you will identify the attributes for one of the entities that you plan to create.
 
-Using the information from the sample data in the image from Task 1, identify the attributes for the entity that will store the sales transaction data.
+2.1 Using the information from the sample data in the image from Task 1, identify the attributes for the entity that will store the sales transaction data.
 
-Make a list of the sales transaction attributes that you identified.
+2.2 Make a list of the sales transaction attributes that you identified.
+
+![Task 1](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%202.png)
+
 
 Task 3: Create an ERD
 Now that you have defined some of your attributes and entities, you can determine the tables and columns for them and create an ERD.
