@@ -52,6 +52,8 @@ Now that you have defined some of your attributes and entities, you can determin
 
 7. Add a table to the ERD for the product entity using the information in the following table. Consider what naming convention to use so that your colleagues will be able to understand your data and ensure that the names are valid in other RDBMS. Use the sample data shown in the image in Task 1 to determine appropriate data types for each column.
 8. Take a screenshot of your ERD and save it as Task3B.png or Task3B.jpg.
+
+
 ![Task 3B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%203B.png)
 
 
