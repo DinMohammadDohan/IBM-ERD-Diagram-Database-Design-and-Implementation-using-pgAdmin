@@ -20,3 +20,25 @@ After completing this lab, you will be able to:
 * Create a materialized view and export the data.
 * Import data into a Db2 database.
 * Import data into a MySQL database.
+
+### Task 1: Identify entities
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
