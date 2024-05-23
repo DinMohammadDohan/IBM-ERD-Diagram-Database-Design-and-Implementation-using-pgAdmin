@@ -23,34 +23,36 @@ After completing this lab, you will be able to:
 
 ### Task 1: Identify entities
 
-1.1 The following image shows sample data from each of the data sources that you will be working with to design your new central database.
-1.2 Make a list of the entities you have identified.
+1. The following image shows sample data from each of the data sources that you will be working with to design your new central database.
+2. Make a list of the entities you have identified.
 
 ![Task 1](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%201.png)
 
 ### Task 2: Identify attributes
 In this task, you will identify the attributes for one of the entities that you plan to create.
 
-2.1 Using the information from the sample data in the image from Task 1, identify the attributes for the entity that will store the sales transaction data.
+1. Using the information from the sample data in the image from Task 1, identify the attributes for the entity that will store the sales transaction data.
 
-2.2 Make a list of the sales transaction attributes that you identified.
+2. Make a list of the sales transaction attributes that you identified.
 
-![Task 1](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%202.png)
+![Task 2](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%202.png)
 
 
 Task 3: Create an ERD
 Now that you have defined some of your attributes and entities, you can determine the tables and columns for them and create an ERD.
 
-Open a new terminal from the side-by-side Cloud IDE.
-Use the start_postgres command to start a PostgreSQL service session in the Cloud IDE.
-Use the pgAdmin weblink to open pgAdmin in a new tab in your browser.
-Create a new database named COFFEE, view the schemas in the new COFFEE database, and then start a new ERD project.
-Add a table to the ERD for the sale transactions entity using the information in the following table. Consider what naming convention to use so that your colleagues will be able to understand your data and to ensure that the names are valid in other RDBMS. And use the sample data shown in the image in Task 1 to determine appropriate data types for each column.
-image1
-Take a screenshot of your ERD and save it as Task3A.png or Task3A.jpg.
-Add a table to the ERD for the product entity using the information in the following table. Consider what naming convention to use so that your colleagues will be able to understand your data and to ensure that the names are valid in other RDBMS. And use the sample data shown in the image in Task 1 to determine appropriate data types for each column.
-image2
-Take a screenshot of your ERD and save it as Task3B.png or Task3B.jpg.
+1. Open a new terminal from the side-by-side Cloud IDE.
+2. Use the start_postgres command to start a PostgreSQL service session in the Cloud IDE.
+3. Use the pgAdmin weblink to open pgAdmin in a new tab in your browser.
+4. Create a new database named COFFEE, view the schemas in the new COFFEE database, and then start a new ERD project.
+5. Add a table to the ERD for the sale transactions entity using the information in the following table. Consider what naming convention to use so that your colleagues will be able to understand your data and to ensure that the names are valid in other RDBMS. And use the sample data shown in the image in Task 1 to determine appropriate data types for each column.
+6. Take a screenshot of your ERD and save it as Task3A.png or Task3A.jpg.
+7. Add a table to the ERD for the product entity using the information in the following table. Consider what naming convention to use so that your colleagues will be able to understand your data and to ensure that the names are valid in other RDBMS. And use the sample data shown in the image in Task 1 to determine appropriate data types for each column.
+8. Take a screenshot of your ERD and save it as Task3B.png or Task3B.jpg.
+![Task 3A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%203A.png)
+![Task 3B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%203B.png)
+
+
 Task 4: Normalize tables
 When reviewing your ERD you notice that it does not conform to second normal form. In this task, you will normalize some of the tables within the database.
 
