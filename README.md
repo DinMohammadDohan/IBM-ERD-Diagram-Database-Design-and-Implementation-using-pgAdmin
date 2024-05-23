@@ -45,25 +45,29 @@ Now that you have defined some of your attributes and entities, you can determin
 2. Use the start_postgres command to start a PostgreSQL service session in the Cloud IDE.
 3. Use the pgAdmin weblink to open pgAdmin in a new tab in your browser.
 4. Create a new database named COFFEE, view the schemas in the new COFFEE database, and then start a new ERD project.
-5. Add a table to the ERD for the sale transactions entity using the information in the following table. Consider what naming convention to use so that your colleagues will be able to understand your data and to ensure that the names are valid in other RDBMS. And use the sample data shown in the image in Task 1 to determine appropriate data types for each column.
+5. Add a table to the ERD for the sale transactions entity using the information in the following table. Consider what naming convention to use so that your colleagues will be able to understand your data and ensure that the names are valid in other RDBMS. Use the sample data shown in the image in Task 1 to determine appropriate data types for each column.
 6. Take a screenshot of your ERD and save it as Task3A.png or Task3A.jpg.
-7. Add a table to the ERD for the product entity using the information in the following table. Consider what naming convention to use so that your colleagues will be able to understand your data and to ensure that the names are valid in other RDBMS. And use the sample data shown in the image in Task 1 to determine appropriate data types for each column.
+7. Add a table to the ERD for the product entity using the information in the following table. Consider what naming convention to use so that your colleagues will be able to understand your data and ensure that the names are valid in other RDBMS. Use the sample data shown in the image in Task 1 to determine appropriate data types for each column.
 8. Take a screenshot of your ERD and save it as Task3B.png or Task3B.jpg.
 ![Task 3A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%203A.png)
 ![Task 3B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%203B.png)
 
 
-Task 4: Normalize tables
-When reviewing your ERD you notice that it does not conform to second normal form. In this task, you will normalize some of the tables within the database.
+### Task 4: Normalize tables
+When reviewing your ERD you notice that it does not conform to the second normal form. In this task, you will normalize some of the tables within the database.
 
-Review the data in the sales transaction table. Note that the transaction id column does not contain unique values because some transactions include multiple products.
-Determine which columns should be stored in a separate table to remove the repeating rows and to put this table into second normal form.
-Add a new table named sales_detail to the ERD, define the columns in the new table, and delete the moved columns from the sales transaction table, leaving a matching column in each of two tables to later create a relationship between them.
-Take a screenshot of your ERD and save it as Task4A.png or Task4A.jpg.
-Review the data in the product table. Note that the product category and product type columns contain redundant data.
-Determine which columns should be stored in a separate table to reduce redundant data and to put this table into second normal form.
-Add a new table named product_type to the ERD, define the columns in the new table, and delete the moved columns from the product table, , leaving a matching column in each of two tables to later create a relationship between them.
-Take a screenshot of your ERD and save it as Task4B.png or Task4B.jpg.
+1. Review the data in the sales transaction table. Note that the transaction ID column does not contain unique values because some transactions include multiple products.
+2. Determine which columns should be stored in a separate table to remove the repeating rows and to put this table into second normal form.
+3. Add a new table named sales_detail to the ERD, define the columns in the new table, and delete the moved columns from the sales transaction table, leaving a matching column in each of the two tables to later create a relationship between them.
+4. Take a screenshot of your ERD and save it as Task4A.png or Task4A.jpg.
+5. Review the data in the product table. Note that the product category and product type columns contain redundant data.
+6. Determine which columns should be stored in a separate table to reduce redundant data and to put this table into a second normal form.
+7. Add a new table named product_type to the ERD, define the columns in the new table, and delete the moved columns from the product table, leaving a matching column in each of the two tables to later create a relationship between them.
+8. Take a screenshot of your ERD and save it as Task4B.png or Task4B.jpg.
+
+![Task 4A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%204A.png)
+![Task 4B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%204B.png)
+
 Task 5: Define keys and relationships
 After normalizing your tables, you can define their primary keys and define relationships between the tables in your ERD.
 
