@@ -83,36 +83,43 @@ sales_detail to product, product to product_type
 ### Task 6: Create database objects by generating and running the SQL script from the ERD Tool
 Now that your design is complete, you will generate an SQL script from your ERD which you could use to create your database schema. For the purposes of this project, you will then use a provided SQL script to ensure that you will be able to successfully load the sample data into the schema. Finally, you will load the existing data from the various data sources into your new database schema.
 
-Use the Generate SQL functionality in the ERD Tool to create an SQL script from your ERD.
+1. Use the Generate SQL functionality in the ERD Tool to create an SQL script from your ERD.
 
-Download the GeneratedScript.sql file below to your local computer storage. GeneratedScript.sql
+2. Download the GeneratedScript.sql file below to your local computer storage. GeneratedScript.sql
 
-In pgAdmin, open the Query Tool, upload and open the GeneratedScript.sql file from your local computer storage, and then execute the script to create the tables defined in the ERD. Verify that the tables now exist in the public schema of the COFFEE database.
+3. In pgAdmin, open the Query Tool, upload and open the GeneratedScript.sql file from your local computer storage, and then execute the script to create the tables defined in the ERD. Verify that the tables now exist in the public schema of the COFFEE database.
 
-Take a screenshot of the tables shown in the tree-view pane on the left-hand side of the page and save it as Task6A.png or Task6A.jpg.
+4. Take a screenshot of the tables shown in the tree-view pane on the left-hand side of the page and save it as Task6A.png or Task6A.jpg.
 
-Download the CoffeeData.sql file below to your local computer storage. CoffeeData.sql
+5. Download the CoffeeData.sql file below to your local computer storage. CoffeeData.sql
 
-In pgAdmin, open another instance of the Query Tool, upload and open the CoffeeData.sql file from your local computer storage, and then execute the script to populate the tables you just created.
+6. In pgAdmin, open another instance of the Query Tool, upload and open the CoffeeData.sql file from your local computer storage, and then execute the script to populate the tables you just created.
 
-In pgAdmin, view the first 100 rows of the sales_detail table.
+7. In pgAdmin, view the first 100 rows of the sales_detail table.
 
-Take a screenshot of the Data Output pane and save it as Task6B.png or Task6B.jpg.
+8. Take a screenshot of the Data Output pane and save it as Task6B.png or Task6B.jpg.
 
-Task 7: Create a view and export the data
+![Task 6A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%206A.png)
+![Task 6B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%206B.png)
+
+
+### Task 7: Create a view and export the data
 The external payroll company have requested a list of employees and the locations at which they work. This should not include the CEO or CFO who own the company. In this task, you will create a view in your PostgreSQL database that returns this information and export the results to a CSV file.
 
-In your COFFEE database, create a new view named staff_locations_view using the following SQL:
+1. In your COFFEE database, create a new view named staff_locations_view using the following SQL:
 SELECT staff.staff_id,
 staff.first_name,
 staff.last_name,
 staff.location
 FROM staff
 WHERE "position" NOT IN ('CEO', 'CFO');
-View all the rows returned from the view.
-Save the results of the query to a file named staff_locations_view.csv on your local computer storage.
-Take a screenshot of the view shown in the tree-view pane on the left-hand side of the page alongside the results in the Data Output pane, and save it as Task7.png or Task7.jpg.
-Task 8: Create a materialized view and export the data
+2. View all the rows returned from the view.
+3. Save the results of the query to a file named staff_locations_view.csv on your local computer storage.
+4. Take a screenshot of the view shown in the tree-view pane on the left-hand side of the page alongside the results in the Data Output pane, and save it as Task7.png or Task7.jpg.
+![Task 6A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%206A.png)
+![Task 6B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%206B.png)
+
+### Task 8: Create a materialized view and export the data
 A marketing consultant requires access to your product data in their MySQL database for a marketing campaign. You will create a materialized view in your PostgreSQL database that returns this information and export the results to a CSV file.
 
 In your COFFEE database, create a new materialized view named product_info_m-view using the following SQL:
