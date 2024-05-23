@@ -27,6 +27,7 @@ After completing this lab, you will be able to:
 1.2 Make a list of the entities you have identified.
 
 https://github.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/blob/main/Task%201.png
+
 Task 2: Identify attributes
 In this task, you will identify the attributes for one of the entities that you plan to create.
 
