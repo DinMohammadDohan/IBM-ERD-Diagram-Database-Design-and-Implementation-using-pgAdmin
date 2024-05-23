@@ -47,9 +47,11 @@ Now that you have defined some of your attributes and entities, you can determin
 4. Create a new database named COFFEE, view the schemas in the new COFFEE database, and then start a new ERD project.
 5. Add a table to the ERD for the sale transactions entity using the information in the following table. Consider what naming convention to use so that your colleagues will be able to understand your data and ensure that the names are valid in other RDBMS. Use the sample data shown in the image in Task 1 to determine appropriate data types for each column.
 6. Take a screenshot of your ERD and save it as Task3A.png or Task3A.jpg.
+
+![Task 3A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%203A.png)
+
 7. Add a table to the ERD for the product entity using the information in the following table. Consider what naming convention to use so that your colleagues will be able to understand your data and ensure that the names are valid in other RDBMS. Use the sample data shown in the image in Task 1 to determine appropriate data types for each column.
 8. Take a screenshot of your ERD and save it as Task3B.png or Task3B.jpg.
-![Task 3A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%203A.png)
 ![Task 3B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%203B.png)
 
 
@@ -60,12 +62,13 @@ When reviewing your ERD you notice that it does not conform to the second normal
 2. Determine which columns should be stored in a separate table to remove the repeating rows and to put this table into second normal form.
 3. Add a new table named sales_detail to the ERD, define the columns in the new table, and delete the moved columns from the sales transaction table, leaving a matching column in each of the two tables to later create a relationship between them.
 4. Take a screenshot of your ERD and save it as Task4A.png or Task4A.jpg.
-5. Review the data in the product table. Note that the product category and product type columns contain redundant data.
-6. Determine which columns should be stored in a separate table to reduce redundant data and to put this table into a second normal form.
-7. Add a new table named product_type to the ERD, define the columns in the new table, and delete the moved columns from the product table, leaving a matching column in each of the two tables to later create a relationship between them.
-8. Take a screenshot of your ERD and save it as Task4B.png or Task4B.jpg.
+   ![Task 4A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%204A.png)
 
-![Task 4A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%204A.png)
+6. Review the data in the product table. Note that the product category and product type columns contain redundant data.
+7. Determine which columns should be stored in a separate table to reduce redundant data and to put this table into a second normal form.
+8. Add a new table named product_type to the ERD, define the columns in the new table, and delete the moved columns from the product table, leaving a matching column in each of the two tables to later create a relationship between them.
+9. Take a screenshot of your ERD and save it as Task4B.png or Task4B.jpg.
+
 ![Task 4B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%204B.png)
 
 ### Task 5: Define keys and relationships
@@ -73,10 +76,11 @@ After normalizing your tables, you can define their primary keys and define rela
 
 1. Identify an appropriate column in each table to be a primary key and create the primary keys in the tables in your ERD.
 2. Take a screenshot of your ERD and save it as Task5A.png or Task5A.jpg.
-3. Identify the relationships between the following pairs of tables and then create the relationships in your ERD: sales_detail to sales_transaction
+   ![Task 5A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%205A.png)
+
+4. Identify the relationships between the following pairs of tables and then create the relationships in your ERD: sales_detail to sales_transaction
 sales_detail to product, product to product_type
-4. Take a screenshot of your ERD and save it as Task5B.png or Task5B.jpg.
-![Task 5A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%205A.png)
+5. Take a screenshot of your ERD and save it as Task5B.png or Task5B.jpg.
 ![Task 5B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%205B.png)
 
 
@@ -90,16 +94,17 @@ Now that your design is complete, you will generate an SQL script from your ERD 
 3. In pgAdmin, open the Query Tool, upload and open the GeneratedScript.sql file from your local computer storage, and then execute the script to create the tables defined in the ERD. Verify that the tables now exist in the public schema of the COFFEE database.
 
 4. Take a screenshot of the tables shown in the tree-view pane on the left-hand side of the page and save it as Task6A.png or Task6A.jpg.
+   ![Task 6A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%206A.png)
 
-5. Download the CoffeeData.sql file below to your local computer storage. CoffeeData.sql
 
-6. In pgAdmin, open another instance of the Query Tool, upload and open the CoffeeData.sql file from your local computer storage, and then execute the script to populate the tables you just created.
+6. Download the CoffeeData.sql file below to your local computer storage. CoffeeData.sql
 
-7. In pgAdmin, view the first 100 rows of the sales_detail table.
+7. In pgAdmin, open another instance of the Query Tool, upload and open the CoffeeData.sql file from your local computer storage, and then execute the script to populate the tables you just created.
 
-8. Take a screenshot of the Data Output pane and save it as Task6B.png or Task6B.jpg.
+8. In pgAdmin, view the first 100 rows of the sales_detail table.
 
-![Task 6A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%206A.png)
+9. Take a screenshot of the Data Output pane and save it as Task6B.png or Task6B.jpg.
+
 ![Task 6B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%206B.png)
 
 
@@ -117,8 +122,7 @@ WHERE "position" NOT IN ('CEO', 'CFO');
 3. Save the results of the query to a file named staff_locations_view.csv on your local computer storage.
 4. Take a screenshot of the view shown in the tree-view pane on the left-hand side of the page alongside the results in the Data Output pane, and save it as Task7.png or Task7.jpg.
    
-![Task 7A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%207A.png)
-![Task 7B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%207B.png)
+![Task 7](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%207.png)
 
 ### Task 8: Create a materialized view and export the data
 A marketing consultant requires access to your product data in their MySQL database for a marketing campaign. You will create a materialized view in your PostgreSQL database that returns this information and export the results to a CSV file.
@@ -132,8 +136,7 @@ ON product.product_type_id = product_type.product_type_id;
 3. View all the rows returned from the view.
 4. Save the results of the query to a file named product_info_m-view.csv on your local computer storage.
 5. Take a screenshot of the view shown in the tree-view pane on the left-hand side of the page alongside the results in the Data Output pane, and save it as Task8.png or Task8.jpg.
-![Task 8A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%208A.png)
-![Task 8B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%208B.png)
+![Task 8](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%208.png)
 
 
 ### Task 9: Import data into a Db2 database
@@ -143,8 +146,7 @@ The external payroll company have asked you to upload the staff location informa
 2. Use the Load Data feature to load a new table named STAFF_LOCATIONS with the staff location information saved in the staff_locations_view.csv file that you exported from the view you created in Task 7.
 3. Explore the new table and then view the data in it.
 4. Take a screenshot of the contents of the new table and save it as Task9.png or Task9.jpg.
-![Task 9A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%209A.png)
-![Task 9B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%209B.png)
+![Task 9](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%209.png)
 
 
 ### Task 10: Import data into a MySQL database
