@@ -38,7 +38,7 @@ In this task, you will identify the attributes for one of the entities that you 
 ![Task 2](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%202.png)
 
 
-Task 3: Create an ERD
+### Task 3: Create an ERD
 Now that you have defined some of your attributes and entities, you can determine the tables and columns for them and create an ERD.
 
 1. Open a new terminal from the side-by-side Cloud IDE.
@@ -68,16 +68,19 @@ When reviewing your ERD you notice that it does not conform to the second normal
 ![Task 4A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%204A.png)
 ![Task 4B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%204B.png)
 
-Task 5: Define keys and relationships
+### Task 5: Define keys and relationships
 After normalizing your tables, you can define their primary keys and define relationships between the tables in your ERD.
 
-Identify an appropriate column in each table to be a primary key and create the primary keys in the tables in your ERD.
-Take a screenshot of your ERD and save it as Task5A.png or Task5A.jpg.
-Identify the relationships between the following pairs of tables and then create the relationships in your ERD: sales_detail to sales_transaction
-sales_detail to product
-product to product_type
-Take a screenshot of your ERD and save it as Task5B.png or Task5B.jpg.
-Task 6: Create database objects by generating and running the SQL script from the ERD Tool
+1. Identify an appropriate column in each table to be a primary key and create the primary keys in the tables in your ERD.
+2. Take a screenshot of your ERD and save it as Task5A.png or Task5A.jpg.
+3. Identify the relationships between the following pairs of tables and then create the relationships in your ERD: sales_detail to sales_transaction
+sales_detail to product, product to product_type
+4. Take a screenshot of your ERD and save it as Task5B.png or Task5B.jpg.
+![Task 5A](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%205A.png)
+![Task 5B](https://raw.githubusercontent.com/DinMohammadDohan/IBM-ERD-Diagram-Database-Design-and-Implementation-using-pgAdmin/main/Task%205B.png)
+
+
+### Task 6: Create database objects by generating and running the SQL script from the ERD Tool
 Now that your design is complete, you will generate an SQL script from your ERD which you could use to create your database schema. For the purposes of this project, you will then use a provided SQL script to ensure that you will be able to successfully load the sample data into the schema. Finally, you will load the existing data from the various data sources into your new database schema.
 
 Use the Generate SQL functionality in the ERD Tool to create an SQL script from your ERD.
